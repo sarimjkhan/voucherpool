@@ -1,0 +1,13 @@
+version: "3.9"
+
+networks:
+  dev_env_network:
+    driver: bridge
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    networks:
+      - dev_env_network
