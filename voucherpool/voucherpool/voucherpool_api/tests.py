@@ -7,6 +7,4 @@ from .models import *
 class VoucherPoolTestCase(APITestCase):
     def getAllVouchers(self):
         response = self.client.get("api/vouchers")
-        print("janicheck: ")
-        print(response)
         self.assertEqual(response.status_code, 200)

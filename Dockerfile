@@ -3,8 +3,8 @@ WORKDIR /code
 COPY . .
 RUN source django_env/bin/activate
 RUN pip install django
-RUN pip install django_rest_framework
+RUN pip install djangorestframework
 RUN python voucherpool/voucherpool/manage.py makemigrations
 RUN python voucherpool/voucherpool/manage.py migrate
-EXPOSE 8000
-CMD ["python", "voucherpool/voucherpool/manage.py", "runserver"]
+EXPOSE 5000
+CMD ["python", "voucherpool/voucherpool/manage.py", "runserver", "0.0.0.0:5000"]
