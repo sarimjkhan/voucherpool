@@ -39,8 +39,7 @@ Run following command
 ```
 Deployed to HEROKU through GitHub Actions
 
-To see CI/CD in action, do a small change in readme.md and push the code to the following repository main branch.
-https://github.com/sarimjkhan/voucherpool.git
+Please see .github/workflows/main.yml in https://github.com/sarimjkhan/voucherpool.git
 ```
 
 ## API Documentation
