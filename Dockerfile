@@ -6,5 +6,5 @@ RUN pip install django
 RUN pip install djangorestframework
 RUN python voucherpool/voucherpool/manage.py makemigrations
 RUN python voucherpool/voucherpool/manage.py migrate
-EXPOSE 443
-CMD ["python", "voucherpool/voucherpool/manage.py", "runserver", "0.0.0.0:443"]
+#EXPOSE 443
+CMD python voucherpool/voucherpool/manage.py runserver 0.0.0.0:$PORT
