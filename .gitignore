@@ -1,1 +1,4 @@
 django_env/lib/*
+*/*/*/__pycache__/
+*/*/*/*/__pycache__/
+*/*/*/*/*/__pycache__/
